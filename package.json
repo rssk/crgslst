@@ -1,0 +1,54 @@
+{
+  "name": "nodeslist",
+  "version": "0.0.1",
+  "description": "A tool to search craigslist",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "3.0.5",
+    "cheerio": "0.19.0",
+    "cron": "1.0.9",
+    "lodash": "4.16.4",
+    "lowdb": "0.13.1",
+    "nodemailer": "1.8.0",
+    "random-ua": "0.0.6",
+    "redis": "2.3.0",
+    "request-promise": "1.0.2",
+    "tape": "4.6.2",
+    "zipcodes": "2.1.0"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "config": "1.16.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-import": "^1.6.0",
+    "eslint-plugin-jsx-a11y": "^1.0.3",
+    "eslint-plugin-react": "^4.2.3",
+    "precommit-hook": "3.0.0"
+  },
+  "scripts": {
+    "lint": "echo 'run linter!'",
+    "validate": "echo 'run validator!'",
+    "test": "grunt test",
+    "clean": "FLUSHALL",
+    "clean-db": "./scripts/clean-db.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MRN-Code/node_boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MRN-Code/node_boilerplate/issues"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
+  "homepage": "https://github.com/MRN-Code/node_boilerplate"
+}

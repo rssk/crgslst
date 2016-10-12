@@ -1,0 +1,15 @@
+{
+  "output": {
+    "file": "./",
+    "email": {
+      "service": "Mailgun",
+      "user": "mail@account.user.com",
+      "password": "soopersecret",
+      "from": "from@address.com",
+      "to": "to@address.com"
+    }
+  },
+  "db": {
+    "adapter": "redis"
+  }
+}
